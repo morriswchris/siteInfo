@@ -30,7 +30,7 @@ if( in_array( '--man', array_keys( $arguments ) ) )
 $i = !empty( $arguments['times'] ) ? $arguments['times'] : 1;
 $sleep = !empty( $arguments['sleep'] ) ? $arguments['sleep'] : 10;	//sleep in seconds
 
-for( $j=0; $j<=$i; $j++ )
+for( $j=0; $j<$i; $j++ )
 {
  	//check for url, must have
 	if( !in_array( 'url', array_keys( $arguments ) ) )
